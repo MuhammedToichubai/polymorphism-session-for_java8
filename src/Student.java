@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 
 public class Student extends Person{
     private double contract;
@@ -13,5 +14,10 @@ public class Student extends Person{
 
     public void setContract(double contract) {
         this.contract = contract;
+    }
+
+    @Override
+    public LocalDateTime timeConsuming(Group group) {
+        return null;
     }
 }
