@@ -1,5 +1,3 @@
-import java.time.LocalDateTime;
-
 public abstract class Person {
     private Long id;
     private String fullName;
@@ -41,6 +39,6 @@ public abstract class Person {
         return gender;
     }
 
-    public abstract LocalDateTime timeConsuming(Group group);
+    public abstract double period(Group group);
 
 }

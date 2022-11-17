@@ -1,5 +1,3 @@
-import java.time.LocalDateTime;
-
 public class Student extends Person{
     private double contract;
 
@@ -17,7 +15,8 @@ public class Student extends Person{
     }
 
     @Override
-    public LocalDateTime timeConsuming(Group group) {
-        return null;
+    public double period(Group group) {
+        int month = group.getDateOfFinish().getDayOfMonth() - group.getDateOfStart().getDayOfMonth();
+        return month * this.getContract();
     }
 }
